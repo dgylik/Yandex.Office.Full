@@ -1,0 +1,64 @@
+@media screen and (max-width: 850px) {
+    /*
+    =========================================
+    main setting
+    =========================================
+    */
+    .group {
+      width: 100%;
+    }
+    /*
+    =========================================
+    header
+    =========================================
+    */
+    .header {
+      flex-direction: column;
+    }
+    .menu ul {
+      justify-content: space-between;
+    }
+    .logo {
+      align-self: center;
+    }
+}
+@media screen and (max-width: 755px) {
+    /*
+    =========================================
+    body main.html
+    =========================================
+    */
+    .conteiner {
+      flex-direction: column;
+      padding: 2.3% 1%;
+      align-items: flex-start;
+    }
+    .col-1 {
+      padding: 0;
+    }
+    .col-1-1 {
+      flex: 0 1 auto;
+      margin-right: 0;
+      margin-bottom: 1%;
+      height: 310px;
+    }
+    .col-1-2 {
+      flex: 0 1 auto;
+      margin-left: 0;
+      height: 310px;
+      margin-bottom: 2%;
+    } 
+}
+@media screen and (max-width: 600px) {
+    /*
+    =========================================
+    body way.html
+    =========================================
+    */
+    .column {
+      flex-direction: column;
+    }
+    .conteiner-way {
+      font-size: 13px;
+    }
+}

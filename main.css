@@ -1,0 +1,258 @@
+/*
+  =============================================
+  Обнуление
+  =============================================
+*/
+html, body, div, h1, p, a, img, ul, li, article, footer, header,
+menu, nav, section, span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, footer, header, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+/*
+  =======================================
+  Box-sizing: border-box
+  =======================================
+*/
+*, *:before, *:after{
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group::before,
+.group::after {
+  content: "";
+  display: table;
+}
+.group::after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+/*
+=========================================
+Basic settings
+=========================================
+*/
+.group {
+  border-left: 5px solid rgb(213, 116, 111);
+  border-right: 5px solid rgb(117, 27, 125);
+  background: rgba(245, 238, 238, 0.849);
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 1.5%;
+  border-radius: 20px;
+}
+h1 {
+  text-align: center;
+  font-size: 2em;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.text-style {
+  font-size: 14px;
+  text-align: left;
+  font-weight: normal;
+}
+/*
+==========================================
+Header
+==========================================
+*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 1.5%;
+}
+.menu {
+  width: 100%;
+}
+.menu ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5%;
+  list-style: none;
+}
+.menu a {
+  text-transform: uppercase;
+}
+.menu a:hover {
+	color: red;
+}
+li {
+  margin: 1.5%;
+  padding: 10px;
+}
+.logo {
+  background-size: cover;
+}
+/*
+==============================================
+body main.html
+==============================================
+*/
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 350px;
+  background: linear-gradient(45deg, rgba(255,160,105,1) 0%, rgba(107,6,128,1) 100%);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.conteiner {
+  margin-bottom: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 2.3% 1.5%;
+}
+.col-1 {
+  display: flex;
+  align-items: center;
+  padding: 1.5%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.col-1-1 {
+  flex: 0 1 70%;
+  background: url("img/img-1.png") no-repeat;
+  background-size: cover;
+  height: 620px;
+  margin-right: 1%;
+}
+.col-1-2 {
+  flex: 0 1 70%;
+  background: url("img/img-2.png") no-repeat;
+  background-size: cover;
+  height: 620px;
+  margin-left: 1%;
+}
+p {
+  font-weight: bold;
+}
+/*
+==============================================
+body way.html
+==============================================
+*/
+.conteiner-way {
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5%;
+}
+.text-image-box {
+  display: flex;
+  width: 98.5%;
+  overflow: hidden;
+  align-items: flex-end;
+  margin: 2% 0.5%; 
+}
+.column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.text {
+  height: 66px;
+  padding-left: 1.5%;
+  margin-bottom: 2.3%;
+}
+/*
+==============================================
+body way.html>img
+==============================================
+*/
+.img-set {
+  background-size: cover;
+  height: 406px;
+}
+.way-img-1 {
+  background: url("way-img/1.png") no-repeat;
+}
+.way-img-2 {
+  background: url("way-img/2.png") no-repeat;
+}
+.way-img-3 {
+  background: url("way-img/3.png") no-repeat;
+}
+.way-img-4 {
+  background: url("way-img/4.png") no-repeat;
+}
+.way-img-5 {
+  background: url("way-img/5.png") no-repeat;
+}
+.way-img-6 {
+  background: url("way-img/6.png") no-repeat;
+}
+.way-img-7 {
+  background: url("way-img/7.png") no-repeat;
+}
+.way-img-8 {
+  background: url("way-img/8.png") no-repeat;
+}
+/*
+==============================================
+body schedule.html
+==============================================
+*/
+.conteine-schedule {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+  overflow: hidden;
+  padding: 2.3% 1.5%;
+}
+.list {
+  width: 98.5%;
+  padding-bottom: 1.5%;
+  margin-bottom: 1.5%;
+  border-bottom: 1px solid rgb(196, 112, 112);
+}
+.list h1 {
+  padding: 2% 0;
+  border-bottom: 1px solid red;
+}
+ul {
+  list-style: circle;
+}
+.list span {
+  font-weight: normal;
+  color: green;
+}
+.list-end {
+  border-bottom: 0;
+}
+/*
+==============================================
+footer
+==============================================
+*/
+.footer {
+  padding: 1.5%;
+}
+a:hover span {
+  color: red;
+}
